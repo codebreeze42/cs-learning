@@ -227,9 +227,9 @@ class CrosswordCreator():
                                 count += 1
             value_scores.append((value, count))
 
-            # 按影响大小从小到大排序
-            value_scores.sort(key=lambda x: x[1])
-            return [value for value, _ in value_scores]
+        # 按影响大小从小到大排序
+        value_scores.sort(key=lambda x: x[1])
+        return [value for value, _ in value_scores]
 
     def select_unassigned_variable(self, assignment):
         """
